@@ -1,24 +1,12 @@
-import React from "react";
 import styled from "@emotion/styled";
+import React from "react";
 import GoBackIcon from "../icons/GoBackIcon";
 
-//STYLE start
-const ImpressumContainer = styled.div`
-  overflow: auto;
-  width: 80%;
-  max-width: 700px;
-  margin: 20px;
-  display: flex;
-`;
-
-const ImpressumText = styled.div``;
-
-//STYLE end
-export default function Impressum() {
+export const Impressum = () => {
   return (
-    <ImpressumContainer>
+    <Container>
       <GoBackIcon />
-      <ImpressumText>
+      <div>
         <h1>Impressum</h1>
         <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
         <p>
@@ -91,7 +79,17 @@ export default function Impressum() {
           Quelle:{" "}
           <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
         </p>
-      </ImpressumText>
-    </ImpressumContainer>
+      </div>
+    </Container>
   );
 }
+
+export default Impressum;
+
+const Container = styled.div`
+  overflow: auto;
+  width: 80%;
+  max-width: 40rem;
+  margin: 1rem;
+  display: flex;
+`;

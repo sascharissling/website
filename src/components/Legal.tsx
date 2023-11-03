@@ -1,14 +1,21 @@
+import styled from "@emotion/styled";
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styled from "@emotion/styled";
+export const Legal = () => {
+  return (
+    <LegalBar>
+      <ImpressumLink to="/impressum">Impressum</ImpressumLink>
+    </LegalBar>
+  );
+};
 
-//STYLE start
+export default Legal;
 
 const LegalBar = styled.div`
   @media (min-width: 600px) {
     position: absolute;
-    bottom: 15px;
+    bottom: 1rem;
   }
   display: flex;
   justify-content: center;
@@ -21,12 +28,3 @@ const ImpressumLink = styled(Link)`
   color: ${(props) => props.theme.secondary};
   opacity: 50%;
 `;
-//STYLE end
-
-export default function Legal() {
-  return (
-    <LegalBar>
-      <ImpressumLink to="/impressum">Impressum</ImpressumLink>
-    </LegalBar>
-  );
-}

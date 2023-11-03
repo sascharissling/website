@@ -1,36 +1,11 @@
-import React from "react";
 import styled from "@emotion/styled";
-
-//ICON import
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import React from "react";
 
-//STYLE start
-
-const FooterBar = styled.footer`
-  width: 30vw;
-
-  margin: 15px 0px 50px 0px;
-
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-
-  background: ${(props) => props.theme.background};
-`;
-
-const SocialLink = styled.a`
-  color: ${(props) => props.theme.secondary};
-  cursor: pointer;
-  &:hover {
-    color: ${(props) => props.theme.primary};
-  }
-`;
-
-export default function Footer() {
+export  const Footer = () => {
   return (
     <FooterBar>
       <SocialLink href="mailto:sascha.rissling@gmail.com" target="_blank">
@@ -54,3 +29,27 @@ export default function Footer() {
     </FooterBar>
   );
 }
+
+export default Footer;
+
+const FooterBar = styled.footer`
+  width: 30vw;
+
+  margin: 1rem 0 3rem 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background: ${(props) => props.theme.background};
+`;
+
+const SocialLink = styled.a`
+  color: ${(props) => props.theme.secondary};
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.primary};
+  }
+`;
+
