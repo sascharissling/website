@@ -1,7 +1,7 @@
-import React from "react";
 import { Global, css } from "@emotion/react";
+import React from 'react';
 
-export default function GlobalStyles() {
+function GlobalStyles() {
   return (
     <Global
       styles={css`
@@ -46,6 +46,8 @@ export default function GlobalStyles() {
     />
   );
 }
+
+export default GlobalStyles;
 
 //FONTS
 // font-family: 'Abril Fatface', cursive;
