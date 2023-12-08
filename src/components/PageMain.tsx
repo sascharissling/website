@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
-import React, { useState } from "react";
+import { useState } from "react";
 import sascha from "../assets/sascha.jpg";
+import Meta from "./Meta";
 
 export const PageMain = () => {
   const [saschaIsShown, setSaschaIsShown] = useState(false);
 
   return (
     <PageIdentity>
+      <Meta />
       {saschaIsShown && <ProfilePicture src={sascha} alt="Sascha Rissling" />}
       <Headline>
         Hello, I am{" "}
