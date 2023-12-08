@@ -3,12 +3,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
-import React from "react";
 
-export  const Footer = () => {
+export const Footer = () => {
   return (
     <FooterBar>
-      <SocialLink href="mailto:sascha.rissling@gmail.com" target="_blank">
+      <SocialLink href="mailto:sascha@rissling.dev" target="_blank">
         <MailOutlineIcon />
       </SocialLink>
       <SocialLink href="tel:00491737074781" target="_blank">
@@ -28,7 +27,7 @@ export  const Footer = () => {
       </SocialLink>
     </FooterBar>
   );
-}
+};
 
 export default Footer;
 
@@ -52,4 +51,3 @@ const SocialLink = styled.a`
     color: ${(props) => props.theme.primary};
   }
 `;
-
