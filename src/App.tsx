@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
 import styled from "@emotion/styled";
-import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
 import Footer from "./components/Footer";
@@ -13,26 +12,25 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <AppContainer>
+      <Wrapper>
         <Routes>
           <Route path="/" element={<PageMain />} />
           <Route path="/impressum" element={<Impressum />} />
         </Routes>
         <Footer />
         <Legal />
-      </AppContainer>
+      </Wrapper>
     </ThemeProvider>
   );
 };
 
 export default App;
 
-const AppContainer = styled.div`
-  width: 100vw;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: min-content 100px 100px;
+  gap: 1rem;
   height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  justify-items: center;
   align-content: center;
-  justify-content: center;
 `;

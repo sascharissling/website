@@ -32,13 +32,12 @@ export const Footer = () => {
 export default Footer;
 
 const FooterBar = styled.footer`
-  width: 30vw;
-
-  margin: 1rem 0 3rem 0;
+  width: 100%;
+  max-width: 30vw;
 
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
   background: ${(props) => props.theme.background};

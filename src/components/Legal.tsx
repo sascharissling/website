@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import React from "react";
 import { Link } from "react-router-dom";
 
 export const Legal = () => {
@@ -13,10 +12,6 @@ export const Legal = () => {
 export default Legal;
 
 const LegalBar = styled.div`
-  @media (min-width: 600px) {
-    position: absolute;
-    bottom: 1rem;
-  }
   display: flex;
   justify-content: center;
   align-items: center;
