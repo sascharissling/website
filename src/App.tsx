@@ -28,7 +28,6 @@ export default App;
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-rows: min-content 100px 100px;
   gap: 1rem;
   height: 100vh;
   justify-items: center;
