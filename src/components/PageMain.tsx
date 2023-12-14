@@ -6,7 +6,7 @@ export const PageMain = () => {
     <PageIdentity>
       <Meta />
       <Headline>
-        Hello, I am <span>Sascha</span> Rissling.
+        Moin! I am <span>Sascha</span> Rissling.
       </Headline>
       <Job>Frontend Developer</Job>
     </PageIdentity>
