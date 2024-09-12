@@ -13,6 +13,18 @@ export const Footer = () => {
       <SocialLink href="tel:00491737074781" target="_blank">
         <PhoneIcon />
       </SocialLink>
+      <SocialLink
+        href="https://www.freelancermap.de/profil/frontend-entwickler-react-js-javascript-next-js-styled-components-html-css"
+        target="_blank"
+        title="Profil von Sascha Rissling auf www.freelancermap.de"
+        rel="noreferrer"
+      >
+        <img
+          loading="lazy"
+          style={{ width: 118, height: 24 }}
+          src="https://www.freelancermap.de/images/widgets/dashboard/fm-profile-badge-black.svg"
+        />
+      </SocialLink>
       <SocialLink href="https://github.com/sascharissling" target="_blank">
         <GitHubIcon />
       </SocialLink>
